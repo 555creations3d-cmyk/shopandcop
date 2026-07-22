@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policies — SHOP & COP</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #00004D;
+    --navy-deep: #000033;
+    --navy-light: #14145E;
+    --ink: #FFFFFF;
+    --grey: #9A9AC0;
+    --line: rgba(255,255,255,0.14);
+    --accent: #C9CBFF;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--navy); color:var(--ink);
+    font-family:'Oswald', sans-serif; -webkit-font-smoothing:antialiased;
+  }
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 28px; border-bottom:1px solid var(--line);
+  }
+  .topbar a{
+    color:var(--ink); text-decoration:none; font-family:'Anton'; font-size:1.1rem;
+    letter-spacing:0.02em;
+  }
+  .topbar .back{
+    font-family:'IBM Plex Mono'; font-size:0.78rem; color:var(--grey);
+    text-decoration:none;
+  }
+  main{max-width:720px; margin:0 auto; padding:56px 28px 80px;}
+  h1{font-family:'Anton'; font-size:clamp(1.8rem,4vw,2.6rem); margin:0 0 8px; text-transform:uppercase;}
+  .updated{font-family:'IBM Plex Mono'; font-size:0.75rem; color:var(--grey); margin-bottom:40px;}
+  h2{font-family:'Anton'; font-size:1.3rem; text-transform:uppercase; margin:44px 0 14px;}
+  p, li{color:var(--grey); line-height:1.7; font-size:0.95rem;}
+  a{color:var(--accent);}
+  ul{padding-left:20px;}
+  footer{
+    border-top:1px solid var(--line); padding:24px 28px; text-align:center;
+    color:var(--grey); font-size:0.78rem; font-family:'IBM Plex Mono';
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html">SHOP & COP</a>
+  <a class="back" href="index.html">&larr; Back to shop</a>
+</div>
+
+<main>
+  <h1>Policies</h1>
+  <p class="updated">Last updated July 2026</p>
+
+  <h2>Orders &amp; Payment</h2>
+  <p>Every product on this site checks out through eBay. When you tap "Buy on eBay," you're taken to the actual eBay listing, where eBay handles your payment, order confirmation, and buyer protection under the eBay Money Back Guarantee. We don't collect or store any payment information ourselves.</p>
+
+  <h2>Custom 3D Print Requests</h2>
+  <p>Custom print requests submitted through this site are quote requests, not orders — nothing is charged when you submit the form. We'll follow up by email or phone to confirm details, pricing, and timeline before any payment is collected. Once a custom print goes into production, it can't be cancelled or refunded, since it's made specifically for you.</p>
+
+  <h2>Shipping</h2>
+  <p>All items ship from Baltimore, Maryland via USPS. Shipping costs and estimated delivery times are shown on each eBay listing at checkout.</p>
+
+  <h2>Returns</h2>
+  <p>Returns are handled per the terms listed on each individual eBay listing, subject to eBay's standard policies. Custom, made-to-order 3D prints are final sale.</p>
+
+  <h2>Age Restrictions</h2>
+  <p>Some items sold here — including rolling papers and lighter accessories — are tobacco-related products. By purchasing these items, you confirm you are 18 years of age or older. We do not sell or ship these items to anyone under 18.</p>
+
+  <h2>Your Information</h2>
+  <p>This site does not use tracking cookies or sell your data. Information submitted through the custom print request form (name, contact info, and description) is sent directly to us by email and used only to follow up on your request.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about an order, a return, or anything else? Email <a href="mailto:555creations.3d@gmail.com">555creations.3d@gmail.com</a>.</p>
+</main>
+
+<footer>
+  &copy; <span id="year"></span> SHOP &amp; COP
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
